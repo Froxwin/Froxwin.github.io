@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Philosopher&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Faustina&display=swap");
+
+body {
+  padding: 50px;
+  background-color: #1e1e2e;
+  color: #cdd6f4;
+  font-size: 2em;
+  font-family: "Philosopher", serif;
+  line-height: 1.3;
+}
+
+#page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 5;
+}
+
+a {
+  color: #a6e3a1;
+}
+
+.tag {
+  color: #cba6f7;
+}
+
+.title {
+  color: #89dceb;
+  font-weight: bold;
+}
+
+.sec {
+  color: #89b4fa;
+}
+
+.cmd {
+  color: #f38ba8;
+}
+
+.att {
+  color: #f5c2e7;
+}
+
+.brace {
+  color: #f9e2af;
+}
