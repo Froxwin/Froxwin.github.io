@@ -1,0 +1,4 @@
+from: markdown-tex_math_dollars
+to: html
+template: .\Layout.html
+standalone: true
