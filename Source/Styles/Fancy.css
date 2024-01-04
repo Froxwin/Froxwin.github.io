@@ -1,19 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Philosopher&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
+@import "./Catppuccin.css";
 
 body {
   padding: 3em;
-  background-color: #1e1e2e;
-  color: #cdd6f4;
+  background-color: var(--ctp-mocha-base);
+  color: var(--ctp-mocha-text);
   font-family: "Philosopher", serif;
   font-size: 1.6em;
   line-height: 1.3;
-  overflow: hidden;
   position: absolute;
   top: 50%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+}
+
+body::-webkit-scrollbar {
+  width: 3px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: var(--ctp-mocha-rosewater);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--ctp-mocha-overlay0);
 }
 
 ul {
@@ -23,30 +39,30 @@ ul {
 }
 
 a {
-  color: #a6e3a1;
+  color: var(--ctp-mocha-green);
 }
 
 .tag {
-  color: #cba6f7;
+  color: var(--ctp-mocha-mauve);
 }
 
 .title {
-  color: #89dceb;
+  color: var(--ctp-mocha-sky);
   font-weight: bold;
 }
 
 .sec {
-  color: #89b4fa;
+  color: var(--ctp-mocha-blue);
 }
 
 .cmd {
-  color: #f38ba8;
+  color: var(--ctp-mocha-red);
 }
 
 .att {
-  color: #f5c2e7;
+  color: var(--ctp-mocha-pink);
 }
 
 .brace {
-  color: #f9e2af;
+  color: var(--ctp-mocha-yellow);
 }
