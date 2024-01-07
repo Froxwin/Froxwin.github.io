@@ -18,8 +18,11 @@ body::-webkit-scrollbar-thumb {
   background-color: var(--ctp-mocha-overlay0);
 }
 
+#paper {
+  padding: 6em;
+}
+
 body {
-  padding: 3em;
   background-color: var(--ctp-mocha-base);
   color: var(--ctp-mocha-text);
   font-size: 1.5em;
@@ -50,4 +53,41 @@ h5 {
   font-family: "Mate SC";
   text-align: right;
   color: var(--ctp-mocha-green);
+}
+
+/* The navigation bar */
+.nav {
+  overflow: hidden;
+  background-color: var(--ctp-mocha-base);
+  position: fixed; /* Set the navbar to fixed position */
+  top: 2em;
+  left: 2em;
+  width: 2.3em; /* Full width */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 240ms ease-in-out;
+  box-shadow: inset 10px 10px 15px rgba(0, 0, 0, 0.4),
+            inset -3px -3px 15px rgba(255, 255, 255, 0.1);
+}
+
+.nav:hover {
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.6),
+            -3px -3px 15px rgba(255, 255, 255, 0.4);
+}
+
+/* Links inside the navbar */
+.nav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 20px;
+  transition: all 240ms ease-in-out;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.nav a:hover {
+  background-color: var(--ctp-mocha-green);
+  color: black;
 }
