@@ -34,8 +34,79 @@ body {
 }
 
 figure {
+  display: block;
+  float: right;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.7));
+  border-radius: 50px;
+  box-shadow: inset 10px 10px 15px rgba(0, 0, 0, 0.4),
+              inset -3px -3px 15px rgba(255, 255, 255, 0.1);
+  width: max-content;
+  img {
+    border-radius: 50px;
+    margin: 1em 1em 0em 1em;
+    border: 5px solid var(--ctp-mocha-text);
+  }
+  figcaption {
+    font-size: small;
+    padding: 0em 0em 1em 0em;
+  }
+}
+
+.gallary {
+  padding: 1em 1em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-radius: 50px;
+  box-shadow: inset 10px 10px 15px rgba(0, 0, 0, 0.4),
+              inset -3px -3px 15px rgba(255, 255, 255, 0.1);
+  width: max-content;
+  p {
+    padding: 0em 0em;
+    margin: 0em 0em;
+    display: flex;
+    flex-direction: row;
+  }
+  img {
+    border-radius: 50px;
+    flex: 1;
+    margin: 0.4em 0.4em;
+    border: 5px solid var(--ctp-mocha-text);
+    width: 100%;
+  }
+  figcaption {
+    font-size: small;
+    padding: 1em 0em 0em 0em;
+  }
+}
+
+.emp {
+  display: block;
+  padding: 2em 2em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-radius: 50px;
+  max-width: fit-content;
+  transition: all 300ms ease-in-out;
+  box-shadow: inset 10px 10px 15px rgba(0, 0, 0, 0.4),
+                    00px 00px 00px rgba(0, 0, 0, 0.4),
+              inset -3px -3px 15px rgba(255, 255, 255, 0.1),
+                    00px 00px 00px rgba(255, 255, 255, 0.1);
+  p {
+    padding: 0em 0em;
+    margin: 0em 0em;
+  }
+}
+.emp:hover {
+  background-color: var(--ctp-mocha-lavender);
+  color: var(--ctp-mocha-mantle);
+  box-shadow: inset 00px 00px 00px rgba(0, 0, 0, 0.4),
+                    15px 15px 15px rgba(0, 0, 0, 0.6),
+              inset 00px 00px 00px rgba(255, 255, 255, 0.1),
+                    -5px -5px 15px rgba(255, 255, 255, 0.4);
 }
 
 h1 {
@@ -45,49 +116,45 @@ h1 {
   color: var(--ctp-mocha-mauve);
 }
 
-hr {
-  color: blue;
-}
-
 h5 {
   font-family: "Mate SC";
   text-align: right;
   color: var(--ctp-mocha-green);
 }
 
-/* The navigation bar */
 .nav {
   overflow: hidden;
-  background-color: var(--ctp-mocha-base);
-  position: fixed; /* Set the navbar to fixed position */
+  position: fixed;
   top: 2em;
   left: 2em;
-  width: 2.3em; /* Full width */
+  width: 2.3em;
   display: grid;
   justify-content: center;
   align-items: center;
   border-radius: 15px;
-  transition: all 240ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out;
   box-shadow: inset 10px 10px 15px rgba(0, 0, 0, 0.4),
-            inset -3px -3px 15px rgba(255, 255, 255, 0.1);
+                    00px 00px 00px rgba(0, 0, 0, 0.4),
+              inset -3px -3px 15px rgba(255, 255, 255, 0.1),
+                    00px 00px 00px rgba(255, 255, 255, 0.1);
+  a {
+    color: var(--ctp-mocha-text);
+    text-align: center;
+    padding: 15px 20px;
+    transition: all 100ms ease-in-out;
+    text-decoration: none;
+  }
+  a:hover {
+    background-color: var(--ctp-mocha-mauve);
+    color: black;
+  }
+  a:active {
+    background-color: var(--ctp-mocha-green);
+  }
 }
-
 .nav:hover {
-  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.6),
-            -3px -3px 15px rgba(255, 255, 255, 0.4);
-}
-
-/* Links inside the navbar */
-.nav a {
-  color: #f2f2f2;
-  text-align: center;
-  padding: 15px 20px;
-  transition: all 240ms ease-in-out;
-  text-decoration: none;
-}
-
-/* Change background on mouse-over */
-.nav a:hover {
-  background-color: var(--ctp-mocha-green);
-  color: black;
+  box-shadow: inset 00px 00px 00px rgba(0, 0, 0, 0.4),
+                    10px 10px 15px rgba(0, 0, 0, 0.6),
+              inset 00px 00px 00px rgba(255, 255, 255, 0.1),
+                    -3px -3px 15px rgba(255, 255, 255, 0.4);
 }
